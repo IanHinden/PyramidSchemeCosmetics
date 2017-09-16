@@ -13,7 +13,8 @@ body {
 }
 
 #mainbody {
-	background-color: #ff69b4;
+	background-color: white;
+	padding: 8px;
 }
 
 header {
@@ -35,7 +36,7 @@ header {
 	font-size:20px;
 	max-height: 100%;
 	object-fit: fill;
-	padding-top: 5px;
+	padding-top: 15px;
 	list-style-type: none;
 }
 
@@ -75,7 +76,7 @@ h1 {
 
 p {
 	font-family: 'Sanchez', serif;
-	font-size: 30px;
+	font-size: 50px;
 	max-width: 80%;
 	font-weight: bold;
 }
@@ -84,12 +85,9 @@ p {
 	list-style-type: none;
 	clear: both;
 	min-height: 100px;
-	margin: 0;
-	border: 0;
-	padding: 0;
-	color: pink;
 	background-image: url('images/pinkflowers.jpg'); 
 	background-attachment: fixed;
+	color: white;
 }
 
 #jumpto ul {
@@ -131,7 +129,7 @@ p {
 .reasons {
 	color:pink;
 	font-family: "Times New Roman", Times, serif;
-	font-size: 20px;
+	font-size: 35px;
 	text-shadow: 0px 0px 0px 0px;
 	font-weight: bold;
 }
@@ -149,9 +147,9 @@ span {
 }
 
 .cleared {
-	border: 20px;
 	margin: 20px;
 	clear: both;
+	border-top: 15px;
 }
 
 .card {
@@ -162,4 +160,35 @@ span {
 	border-top: 10px;
 	float: left;
 	background-color: #c904c9;
+}
+
+@media screen and (max-width: 995px) {
+    
+	#jumpto {
+		list-style-type: none;
+		clear: both;
+		background-image: url('images/pinkflowers.jpg'); 
+		background-attachment: fixed;
+		color: white;
+		min-height: 80px;
+	}
+
+	#jumpto ul {
+		border-width: 4px;
+		padding: 20px;
+		color: white; 
+		text-align: center;
+	}
+	
+	#jumpto li {
+        display: inline;
+		border-style: solid;
+		text-align: center;
+		font-size: 25px;
+		border-width: 4px;
+		color: white; 
+		font-weight: bold;
+		padding: 5px;
+		margin: 0 0 0 0;
+    }
 }
