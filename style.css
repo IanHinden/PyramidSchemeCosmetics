@@ -110,6 +110,10 @@ p {
 	margin: 0 10px 0 0;
 }
 
+#jumpto li:hover {
+	color: black;
+}
+
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%;
@@ -146,10 +150,14 @@ span {
 	float: right;
 }
 
+.floatleft {
+	height: auto;
+	width: 45%;
+	float: left;
+}
+
 .cleared {
-	margin: 20px;
 	clear: both;
-	border-top: 15px;
 }
 
 .card {
@@ -159,6 +167,16 @@ span {
 	width: 53%;
 	border-top: 10px;
 	float: left;
+	background-color: #c904c9;
+}
+
+.cardtwo {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+	margin: 0;
+	width: 53%;
+	border-top: 10px;
+	float: right;
 	background-color: #c904c9;
 }
 
@@ -191,4 +209,15 @@ span {
 		padding: 5px;
 		margin: 0 0 0 0;
     }
+}
+
+@media screen and (max-width: 480px) {
+	#jumpto {
+		display: hidden;
+	}
+	
+	
+	
+	
+	
 }
