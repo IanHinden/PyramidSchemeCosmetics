@@ -180,6 +180,12 @@ span {
 	background-color: #c904c9;
 }
 
+.saten {
+	width: 300px;
+	height: 100%;
+	float: left;
+}
+
 @media screen and (max-width: 995px) {
     
 	#jumpto {
