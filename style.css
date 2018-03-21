@@ -181,10 +181,16 @@ span {
 }
 
 .saten {
-	width: 300px;
+	width: 250px;
 	height: 100%;
 	float: left;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	padding: 5px;
+}
+
+.satinfo p{
+	font-size: 15px;
+	text-align: center;
 }
 
 @media screen and (max-width: 995px) {
