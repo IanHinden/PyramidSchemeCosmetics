@@ -192,9 +192,16 @@ span {
 	text-align: center;
 }
 
+#flexproducts {
+	display: flex;
+}
+
 #products img {
 	max-width: 500px;
 	padding: 20px;
+	clear: all;
+	padding-left: 50%;
+	padding-right: 50%;
 }
 
 .boxprod {
