@@ -179,12 +179,17 @@ span {
 	background-color: #c904c9;
 }
 
+.satenflex {
+	display: flex;
+	flex-flow: row wrap;
+}
+
 .saten {
 	width: 250px;
 	height: 100%;
-	float: left;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	padding: 5px;
+	flex: 1;
 }
 
 .satinfo p{
@@ -194,9 +199,11 @@ span {
 
 #flexproducts {
 	display: flex;
+	flex-flow: row wrap;
 }
 
 #products img {
+	flex: 1;
 	max-width: 500px;
 	padding: 20px;
 	clear: all;
