@@ -215,7 +215,7 @@ desc {
 }
 
 .boxprod {
-	background: linear-gradient(pink, white);
+	background: linear-gradient(#cc00cc, white);
 	flex: 1;
 }
 
