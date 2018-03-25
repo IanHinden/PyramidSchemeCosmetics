@@ -70,7 +70,7 @@ h1 {
 	text-align: center;
 	clear: both;
 	margin: 0;
-	bordder: 0;
+	border: 0;
 	padding: 0;
 }
 
@@ -109,8 +109,16 @@ p {
 	margin: 0 10px 0 0;
 }
 
+#jumpto li a {
+	text-decoration: none;
+}
+
 #jumpto li:hover {
 	color: black;
+}
+
+#jumpto a:visited {
+	color: inherit;
 }
 
 .videoWrapper {
