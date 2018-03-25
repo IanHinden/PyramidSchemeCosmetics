@@ -189,6 +189,7 @@ span {
 	height: 100%;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	padding: 5px;
+	margin: 5px;
 	flex: 1;
 }
 
@@ -202,28 +203,26 @@ span {
 	flex-flow: row wrap;
 }
 
+desc {
+	margin: 10px;
+}
+
 #products img {
-	flex: 1;
 	max-width: 500px;
-	padding: 20px;
 	clear: all;
 	padding-left: 50%;
 	padding-right: 50%;
 }
 
 .boxprod {
-	background: linear-gradient(pink, white)
+	background: linear-gradient(pink, white);
+	flex: 1;
 }
 
 .boxprod img {
 	max-width: 500px;
 	padding: 20px;
 	display: inline;
-}
-
-.desccard {
-	float: right;
-	text-align: center;
 }
 
 @media screen and (max-width: 995px) {
