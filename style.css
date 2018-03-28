@@ -214,6 +214,10 @@ desc {
 	display: inline;
 }
 
+#footerbanner {
+	background-color: pink;
+}
+
 @media screen and (max-width: 995px) {
     
 	#jumpto {
