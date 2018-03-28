@@ -216,6 +216,18 @@ desc {
 
 #footerbanner {
 	background-color: pink;
+	height: 40px;
+}
+
+#footerbanner p {
+	font-size: 15px;
+	padding-top: 10px;
+	display: inline-block;
+}
+
+#learn {
+	border: 1px solid white;
+	border-radius: 25px;
 }
 
 @media screen and (max-width: 995px) {
