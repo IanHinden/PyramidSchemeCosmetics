@@ -216,13 +216,19 @@ desc {
 
 #footerbanner {
 	background-color: #ff80ff;
-	height: 40px;
+	height: 50px;
+	display: flex;
 }
 
 #footerbanner p {
 	font-size: 15px;
-	margin-top:8px;
+	margin-top: 14px;
 	display: inline-block;
+	text-align: center;
+}
+
+#time {
+	flex: 3;
 }
 
 #footerbanner span {
@@ -231,12 +237,17 @@ desc {
 }
 
 #learn {
+	flex: 1;
+}
+
+#learn p {
 	border: 1px solid white;
 	border-radius: 5px;
 	padding: 2px;
+	text-align: center;
 }
 
-#learn:hover {
+#learn p:hover {
 	background-color:#ff33ff;
 }
 
