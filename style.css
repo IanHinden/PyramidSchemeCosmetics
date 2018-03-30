@@ -218,6 +218,7 @@ desc {
 	background-color: #ff80ff;
 	height: 50px;
 	display: flex;
+	flex-flow: row wrap;
 }
 
 #footerbanner p {
@@ -225,6 +226,7 @@ desc {
 	margin-top: 14px;
 	display: inline-block;
 	text-align: center;
+	color: white;
 }
 
 #time {
@@ -241,14 +243,19 @@ desc {
 }
 
 #learn p {
+	margin: 8px;
+	padding: 5px;
 	border: 1px solid white;
 	border-radius: 5px;
-	padding: 2px;
 	text-align: center;
 }
 
 #learn p:hover {
 	background-color:#ff33ff;
+}
+
+#footermenu {
+	display: flex;
 }
 
 @media screen and (max-width: 995px) {
