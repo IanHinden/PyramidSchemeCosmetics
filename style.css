@@ -256,6 +256,22 @@ desc {
 
 #footermenu {
 	display: flex;
+	padding-top: 60px;
+}
+
+#footermenu div {
+	flex: 1;
+	padding-right: 40px;
+	margin: 15px;
+}
+
+#footermenu img {
+	width: 200px;
+	height: auto;
+}
+
+#footermenu p{
+	font-size: 13px;
 }
 
 @media screen and (max-width: 995px) {
