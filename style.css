@@ -261,8 +261,11 @@ desc {
 
 #footermenu div {
 	flex: 1;
-	padding-right: 40px;
-	margin: 15px;
+	padding-left: 40px;
+}
+
+#footermenu div div {
+	padding-left: 0px;
 }
 
 #footermenu img {
@@ -270,8 +273,18 @@ desc {
 	height: auto;
 }
 
+#footermenu h1{
+	font-size: 20px;
+}
+
 #footermenu p{
-	font-size: 13px;
+	font-size: 12px;
+}
+
+#copyright {
+	text-align: center;
+	font-size: 12px;
+	padding-top: 12px;
 }
 
 @media screen and (max-width: 995px) {
