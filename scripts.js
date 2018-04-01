@@ -10,17 +10,32 @@
 			console.log('title:', title);
 		});
 		
+		//code to check video time repeatedly
 		var tid = setInterval(backgroundChange, 1000);
 
+		//effect to change background when video reaches certain points
 		function backgroundChange(){ 
 		player.getCurrentTime().then(function(seconds) {
 			if(seconds>3 && seconds <5){
 				$( "body" ).animate({
-				backgroundColor: "black",
+					backgroundColor: "black",
 				}, 1000 );
 			} else {
 				$( "body" ).animate({
-				backgroundColor: "white",
+					backgroundColor: "white",
 				}, 1000 );
 			}
 		})};
+		
+			
+	$(window).scroll(function(){
+		//Counter opacity
+ 		if($(this).scrollTop()> 380)
+ 		{
+ 			$("iframe").addClass("iframe-scrolled");
+ 		} 
+ 		else 
+ 		{
+ 			$("iframe").removeClass("iframe-scrolled");
+		}
+	});
