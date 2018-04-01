@@ -12,6 +12,10 @@ body {
 	margin: 0 auto;
 }
 
+iframe {
+	padding-top: 10px;
+}
+
 #mainbody {
 	background-color: white;
 	padding: 8px;
