@@ -143,22 +143,6 @@ p {
 	color: inherit;
 }
 
-.videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 25px;
-	height: 0;
-	float: right;
-}
-
-.videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
 .reasons {
 	color:pink;
 	font-family: "Times New Roman", Times, serif;
@@ -171,22 +155,6 @@ span {
 	font-weight: bold;
 	font-family: "Times New Roman", Times, serif;
 	font-size: 20px;
-}
-
-.floatright {
-	height: auto;
-	width: 45%;
-	float: right;
-}
-
-.floatleft {
-	height: auto;
-	width: 45%;
-	float: left;
-}
-
-.cleared {
-	clear: both;
 }
 
 .satenflex {
