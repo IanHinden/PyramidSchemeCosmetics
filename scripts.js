@@ -12,6 +12,7 @@
 		
 		//code to check video time repeatedly
 		var tid = setInterval(backgroundChange, 1000);
+		var tid2 = setInterval(shake, 1000);
 
 		//effect to change background when video reaches certain points
 		function backgroundChange(){ 
@@ -24,6 +25,13 @@
 				$( "body" ).animate({
 					backgroundColor: "white",
 				}, 1000 );
+			}
+		})};
+		
+		function shake(){
+		player.getCurrentTime().then(function(seconds){
+			if(seconds>12){
+				$("#mainbody").effect("shake",{times:100, distance:10});
 			}
 		})};
 		
