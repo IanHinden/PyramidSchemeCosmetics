@@ -21,10 +21,12 @@
 				$( "body" ).animate({
 					backgroundColor: "black",
 				}, 1000 );
+				$("#jumpto").fadeOut(1000);
 			} else {
 				$( "body" ).animate({
 					backgroundColor: "white",
 				}, 1000 );
+				$("#jumpto").fadeIn(1000);
 			}
 		})};
 		
