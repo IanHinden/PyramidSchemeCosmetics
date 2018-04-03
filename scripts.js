@@ -33,13 +33,20 @@
 		function shake(){
 		player.getCurrentTime().then(function(seconds){
 			if(seconds>12){
-				$("#mainbody").effect("shake",{times:100, distance:10});
+				player.getPaused().then(function(paused) {
+					if(paused==false){
+						//$("#mainbody").effect("shake",{times:100, distance:10});
+						$(".iframe-scrolled").css({"right":"auto", "left":"auto", "height":"400px"});
+					} else {
+						$(".iframe-scrolled").css({"right":"10", "left":"25%", "height":"200px"});
+					}
+				});
 			}
 		})};
 		
 			
 	$(window).scroll(function(){
-		//Counter opacity
+		//Move video on scroll
  		if($(this).scrollTop()> 380)
  		{
  			$("iframe").addClass("iframe-scrolled");
