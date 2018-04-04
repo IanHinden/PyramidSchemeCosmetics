@@ -39,8 +39,16 @@ iframe {
 	width: auto;
 }
 
-#opportunity p{
-	font-size: 20px;
+#opptext {
+	padding: 10px;
+	line-height: 40px;
+	height: 300px;
+}
+
+#opptext p {
+	font-family: 'Chicle', cursive;
+	font-size: 24px;
+	text-align: center;
 }
 
 #mainbody {
