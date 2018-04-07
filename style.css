@@ -45,7 +45,14 @@ iframe {
 	height: 300px;
 }
 
-#opptext p {
+#opptext-hidden {
+	padding: 10px;
+	line-height: 40px;
+	height: 300px;
+	display: none;
+}
+
+#opptext p,#opptext-hidden p {
 	font-family: 'Chicle', cursive;
 	font-size: 24px;
 	text-align: center;
