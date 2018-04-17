@@ -278,6 +278,19 @@ desc {
 	padding-left: 40px;
 }
 
+#footermenu a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#footermenu li:hover {
+	color: black;
+}
+
+#footermenu a:visited {
+	color: inherit;
+}
+
 #footermenu div div {
 	padding-left: 0px;
 }
