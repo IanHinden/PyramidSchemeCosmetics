@@ -86,6 +86,20 @@ header {
 	list-style-type: none;
 }
 
+.sharebar a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.sharebar li:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+.sharebar a:visited {
+	color: inherit;
+}
+
 header img {
 	margin: 0;
 	border: 0;
