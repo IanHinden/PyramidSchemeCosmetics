@@ -218,6 +218,7 @@ span {
 .flexproducts {
 	display: flex;
 	flex-flow: row wrap;
+	background: linear-gradient(#cc00cc, white);
 }
 
 desc {
@@ -225,7 +226,6 @@ desc {
 }
 
 .boxprod {
-	background: linear-gradient(#cc00cc, white);
 	flex: 1;
 }
 
@@ -235,15 +235,11 @@ desc {
 	display: inline;
 }
 
-.boxprodright {
-	background: linear-gradient(#cc00cc, white);
-	flex: 1;
-}
-
 .boxprodright img {
 	max-width: 500px;
 	padding: 20px;
 	display: inline;
+	flex:1;
 }
 
 #footerbanner {
