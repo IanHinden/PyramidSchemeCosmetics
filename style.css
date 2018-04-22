@@ -215,7 +215,7 @@ span {
 	text-align: center;
 }
 
-#flexproducts {
+.flexproducts {
 	display: flex;
 	flex-flow: row wrap;
 }
@@ -224,19 +224,23 @@ desc {
 	margin: 10px;
 }
 
-#products img {
-	max-width: 500px;
-	clear: all;
-	padding-left: 50%;
-	padding-right: 50%;
-}
-
 .boxprod {
 	background: linear-gradient(#cc00cc, white);
 	flex: 1;
 }
 
 .boxprod img {
+	max-width: 500px;
+	padding: 20px;
+	display: inline;
+}
+
+.boxprodright {
+	background: linear-gradient(#cc00cc, white);
+	flex: 1;
+}
+
+.boxprodright img {
 	max-width: 500px;
 	padding: 20px;
 	display: inline;
