@@ -228,11 +228,11 @@ span {
 }
 
 .desc h2 {
-	font-size: 22px;
+	font-size: 40px;
 }
 
 .desc p {
-	font-size: 12px;
+	font-size: 20px;
 }
 
 .boxprod {
@@ -240,17 +240,21 @@ span {
 	text-align: center;
 }
 
+.boxprodright {
+	flex: 1;
+	text-align: center;
+}
+
 .boxprod img {
-	max-width: 500px;
+	max-width: 370px;
 	padding: 20px;
 	display: inline;
 }
 
 .boxprodright img {
-	max-width: 500px;
+	max-width: 370px;
 	padding: 20px;
 	display: inline;
-	flex:1;
 }
 
 #footerbanner {
