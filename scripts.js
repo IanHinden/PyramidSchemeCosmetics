@@ -61,15 +61,22 @@
 			}
 		})};
 		
+		$("#closebutton" ).click(function() {
+			$("#vidcontainer").css("display","none");
+			player.pause();
+		});
+			
 			
 	$(window).scroll(function(){
 		//Move video on scroll
  		if($(this).scrollTop()> 380)
  		{
  			$("iframe").addClass("iframe-scrolled");
+			$("#closebutton").css("display","inherit");
  		} 
  		else 
  		{
  			$("iframe").removeClass("iframe-scrolled");
+			$("#closebutton").css("display", "none");
 		}
 	});

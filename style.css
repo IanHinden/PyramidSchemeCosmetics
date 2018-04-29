@@ -33,6 +33,18 @@ iframe {
 	z-index: 1000;
 }
 
+#closebutton {
+	display: none;
+}
+
+#closebutton img {
+	width: 15px;
+	position: fixed;
+	bottom: 215px;
+	/*right: 100px;*/
+	left: 90%;
+}
+
 #opportunity img {
 	float: left;
 	height: 300px;
