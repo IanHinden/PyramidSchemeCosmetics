@@ -1,4 +1,9 @@
-
+		$( window ).load(function() {
+			counter = 1;
+		  setCookie("counter", visits, expdate);
+		  console.log(counter);
+		});
+		
 		var iframe = document.querySelector('iframe');
 		var player = new Vimeo.Player(iframe);
 
@@ -80,3 +85,4 @@
 			$("#closebutton").css("display", "none");
 		}
 	});
+	
