@@ -4,6 +4,8 @@
 		  console.log(counter);
 		});
 		
+		
+		
 		var iframe = document.querySelector('iframe');
 		var player = new Vimeo.Player(iframe);
 
