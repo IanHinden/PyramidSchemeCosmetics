@@ -44,10 +44,12 @@
 				player.getPaused().then(function(paused) {
 					if(paused==false){
 						//$("#mainbody").effect("shake",{times:100, distance:10});
-						$(".iframe-scrolled").css({"right":"auto", "left":"auto", "height":"400px"});
+						$(".iframe-scrolled").css({"right":"auto", "left":"auto", "height":"400px", "bottom": "auto", "top":"auto"});
 						$("#Ron").attr("src", "images/Sharon.jpg");
+						$( "body" ).css({ "background-color":"black"});
 					} else {
 						$(".iframe-scrolled").css({"right":"10", "left":"25%", "height":"273px"});
+						$( "body" ).css({ "background-color":"white"});
 					}
 				});
 			}
