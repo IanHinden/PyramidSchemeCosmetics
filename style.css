@@ -415,9 +415,15 @@ span {
 			list-style:none;
 		}
 		
-		#socialshare li {
-			width:100%;
-			border-right:none;
+		#nav li {
+			display: block;
+			text-align: center;
+			border: .5px solid black;
+			height: 30px;
+		}
+		
+		.disp {
+			display: none;
 		}
 		
 		#socialshare {
@@ -434,6 +440,7 @@ span {
 		.sharebar ul li {
 			width: 100%;
 		}
+		
 	}
 	
 @media screen and (min-width: 768px) {
