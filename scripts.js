@@ -29,8 +29,8 @@
 		
 		//code to check video time repeatedly
 		var tid = setInterval(backgroundChange, 1000);
-		var tid2 = setInterval(shake, 1000);
-		var tid3 = setInterval(changeText, 1000);
+		//var tid2 = setInterval(shake, 1000);
+		//var tid3 = setInterval(changeText, 1000);
 
 		//effect to change background when video reaches certain points
 		function backgroundChange(){ 
@@ -45,6 +45,31 @@
 					backgroundColor: "white",
 				}, 1000 );
 				$("#jumpto").fadeIn(1000);
+			}
+			
+			if(seconds>12){
+				player.getPaused().then(function(paused) {
+					if(paused==false){
+						$(".iframe-scrolled").css({"right":"auto", "left":"auto", "height":"400px", "bottom": "auto", "top":"auto"});
+						$("#Ron").attr("src", "images/Sharon.jpg");
+						$( "body" ).css({ "background-color":"black"});
+					} else {
+						$(".iframe-scrolled").css({"right":"10", "left":"25%", "height":"273px", "bottom":"10px"});
+						$( "body" ).css({ "background-color":"white"});
+					}
+				});
+			}
+			
+			if(seconds>20){
+					player.getPaused().then(function(paused){
+						if(paused==false){
+							$("#opptext").css("display","none");
+							$("#opptext-hidden").css("display","block");
+						} else {
+							$("#opptext").css("display","block");
+							$("#opptext-hidden").css("display","none");
+						}
+				});
 			}
 		})};
 		
@@ -65,7 +90,7 @@
 			}
 		})};
 		
-		function changeText(){
+		/*function changeText(){
 			player.getCurrentTime().then(function(seconds){
 				if(seconds>20){
 					player.getPaused().then(function(paused){
@@ -78,7 +103,7 @@
 						}
 				});
 			}
-		})};
+		})};*/
 		
 		$("#closebutton" ).click(function() {
 			$("#vidcontainer").css("display","none");
