@@ -397,6 +397,16 @@ span {
     }
 }
 
+@media screen and (max-width: 800px){	
+	#jumpto li {
+		font-size: 15px;
+	}
+	
+	#jumpto {
+		min-height: 40px;
+	}
+}
+
 @media screen and (max-width: 768px) {
 		#menu {
 			width:1.4em;
