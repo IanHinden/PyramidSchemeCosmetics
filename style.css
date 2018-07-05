@@ -248,6 +248,12 @@ span {
 	font-size: 20px;
 }
 
+.desc li {
+	font-size: 20px;
+	text-align: left;
+	font-weight: bold;
+}
+
 .boxprod {
 	flex: 1;
 	text-align: center;
