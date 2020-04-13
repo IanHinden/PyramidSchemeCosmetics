@@ -28,26 +28,15 @@
 		});
 		
 		//code to check video time repeatedly
-		var tid = setInterval(backgroundChange, 1000);
+		var tid = setInterval(backgroundChange, 800);
 		//var tid2 = setInterval(shake, 1000);
 		//var tid3 = setInterval(changeText, 1000);
 
 		//effect to change background when video reaches certain points
 		function backgroundChange(){ 
 		player.getCurrentTime().then(function(seconds) {
-			if(seconds>3 && seconds <5){
-				$( "body" ).animate({
-					backgroundColor: "black",
-				}, 1000 );
-				$("#jumpto").fadeOut(1000);
-			} else {
-				$( "body" ).animate({
-					backgroundColor: "white",
-				}, 1000 );
-				$("#jumpto").fadeIn(1000);
-			}
 			
-			if(seconds>12){
+			/*if(seconds>12){
 				player.getPaused().then(function(paused) {
 					if(paused==false){
 						$(".iframe-scrolled").css({"right":"auto", "left":"auto", "height":"400px", "bottom": "auto", "top":"auto"});
@@ -58,7 +47,7 @@
 						$( "body" ).css({ "background-color":"white"});
 					}
 				});
-			}
+			}*/
 			
 			if(seconds>20){
 					player.getPaused().then(function(paused){
@@ -71,9 +60,16 @@
 						}
 				});
 			}
+			
+			if((seconds>210 && seconds <220)){
+				$( "body" ).animate({
+					backgroundColor: "black",
+				});
+				$("#jumpto").fadeOut(1000);
+			}
 		})};
 		
-		function shake(){
+		/*function shake(){
 		player.getCurrentTime().then(function(seconds){
 			if(seconds>12){
 				player.getPaused().then(function(paused) {
@@ -88,7 +84,7 @@
 					}
 				});
 			}
-		})};
+		})};*/
 		
 		/*function changeText(){
 			player.getCurrentTime().then(function(seconds){
