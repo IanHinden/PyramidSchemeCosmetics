@@ -28,7 +28,7 @@
 		});
 		
 		//code to check video time repeatedly
-		var tid = setInterval(backgroundChange, 800);
+		var tid = setInterval(backgroundChange, 50);
 		//var tid2 = setInterval(shake, 1000);
 		//var tid3 = setInterval(changeText, 1000);
 
@@ -61,11 +61,15 @@
 				});
 			}
 			
-			if((seconds>210 && seconds <220)){
-				$( "body" ).animate({
-					backgroundColor: "black",
-				});
-				$("#jumpto").fadeOut(1000);
+			if((seconds>209.5 && seconds < 220)){
+				$("#blackout").css("display", "block");
+				window.scrollTo(0,0);
+			}
+			
+			if((seconds>211 && seconds < 220)){
+				$("iframe").css("height","436px");
+				$("iframe").removeClass("iframe-scrolled");
+				$("iframe").addClass("iframe-shock");
 			}
 		})};
 		

@@ -8,19 +8,35 @@ body {
 	border: 0;
     padding: 0;
 	background-color: white;
+}
+
+#maincontent {
 	max-width: 1170px;
 	margin: 0 auto;
 }
 
 #vidcontainer {
 	height: 290px;
+	position: relative;
+}
+
+#blackout {
+	height: 1243%;
+	width: 100%;
+	background-color: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	display: none;
 }
 
 iframe {
 	padding-top: 10px;
 	width: 100%; 
 	height: 273; 
-	frameborder:0; 
+	frameborder: 0; 
+	z-index: 1000;
 }
 
 .iframe-scrolled {
@@ -30,7 +46,13 @@ iframe {
 	left: 25%;
 	padding-top: 0px;
 	height: 200px;
-	z-index: 1000;
+}
+
+.iframe-shock {
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 #closebutton {
