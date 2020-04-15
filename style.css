@@ -36,7 +36,7 @@ iframe {
 	width: 100%; 
 	height: 273; 
 	frameborder: 0; 
-	z-index: 1000;
+	z-index: 1005;
 }
 
 .iframe-scrolled {
@@ -53,6 +53,16 @@ iframe {
 	top: 80%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+#tammyone {
+	position: fixed;
+	height: 171px;
+	width: auto;
+	left: 236px;
+	top: -40px;
+	z-index: 1000;
+	display: none;
 }
 
 #closebutton {

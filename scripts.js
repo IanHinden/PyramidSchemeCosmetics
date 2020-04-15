@@ -1,7 +1,4 @@
 		$( window ).load(function() {
-			counter = 1;
-		  setCookie("counter", visits, expdate);
-		  console.log(counter);
 		});
 		
 		//hamburger menu
@@ -18,6 +15,8 @@
 		
 		var iframe = document.querySelector('iframe');
 		var player = new Vimeo.Player(iframe);
+		
+		let scale = 1.5;
 
 		player.on('play', function() {
 			console.log('played the video!');
@@ -70,6 +69,20 @@
 				$("iframe").css("height","436px");
 				$("iframe").removeClass("iframe-scrolled");
 				$("iframe").addClass("iframe-shock");
+			}
+			
+			if((seconds>230 && seconds <250)){
+				$("#tammyone").fadeIn(30000);
+				let tammyOne = document.getElementById("tammyone");
+				let ts = setInterval(tammyCreep, 5);
+				function tammyCreep(){
+					if(scale > 3){
+						clearInterval(ts);
+					} else {
+						scale = scale + .000001;
+						tammyOne.style.transform = "scale(" + scale + ")";
+					}
+				}
 			}
 		})};
 		
