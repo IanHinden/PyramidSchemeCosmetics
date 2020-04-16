@@ -65,6 +65,16 @@ iframe {
 	display: none;
 }
 
+#tammytwo {
+	position: fixed;
+	height: 171px;
+	width: auto;
+	right: 236px;
+	top: -40px;
+	z-index: 1001;
+	display: none;
+}
+
 #closebutton {
 	display: none;
 }

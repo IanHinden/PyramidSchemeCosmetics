@@ -17,6 +17,7 @@
 		var player = new Vimeo.Player(iframe);
 		
 		let scale = 1.5;
+		let scale2 = 1.5;
 
 		player.on('play', function() {
 			console.log('played the video!');
@@ -84,6 +85,22 @@
 					}
 				}
 			}
+			
+			if((seconds>280 && seconds <300)){
+				$("#tammytwo").fadeIn(30000);
+				let tammyTwo = document.getElementById("tammytwo");
+				let ts = setInterval(tammyCreep, 5);
+				function tammyCreep(){
+					if(scale2 > 3){
+						clearInterval(ts);
+					} else {
+						scale2 = scale2 + .000001;
+						tammyTwo.style.transform = "scale(" + scale2 + ")";
+					}
+				}
+			}
+			
+			
 		})};
 		
 		/*function shake(){
