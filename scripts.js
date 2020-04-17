@@ -84,6 +84,8 @@
 						tammyOne.style.transform = "scale(" + scale + ")";
 					}
 				}
+				
+				window.addEventListener("scroll", keepTop, true);
 			}
 			
 			if((seconds>280 && seconds <300)){
@@ -100,7 +102,17 @@
 				}
 			}
 			
+			if((seconds>300 && seconds <305)){
+				console.log("Remove time");
+				window.removeEventListener("scroll", keepTop, true);
+			}
 			
+			function keepTop() {
+				if($(this).scrollTop()> 0)
+					{
+						window.scrollTo(0,0);
+					} 
+			}
 		})};
 		
 		/*function shake(){

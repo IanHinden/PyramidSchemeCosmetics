@@ -45,7 +45,7 @@ iframe {
 	right: 10px;
 	left: 25%;
 	padding-top: 0px;
-	height: 200px;
+	height: 324px;
 }
 
 .iframe-shock {
@@ -411,7 +411,7 @@ span {
 	text-align: center;
 	font-size: 12px;
 	padding-top: 12px;
-	padding-bottom: 230px;
+	padding-bottom: 338px;
 }
 
 @media screen and (max-width: 995px) {
