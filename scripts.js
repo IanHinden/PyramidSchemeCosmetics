@@ -102,9 +102,12 @@
 				}
 			}
 			
-			if((seconds>300 && seconds <305)){
-				console.log("Remove time");
-				window.removeEventListener("scroll", keepTop, true);
+			//Back to normal
+			if((seconds>333 && seconds <337)){
+				console.log("Back to normal");
+				$("#blackout").css("display", "none");
+				$("#tammyone").css("display", "none");
+				$("#tammytwo").css("display", "none");
 			}
 			
 			function keepTop() {
