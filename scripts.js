@@ -110,12 +110,27 @@
 			}
 			
 			function keepTop(event) {
-				if($(this).scrollTop()> 1)
+				if($(this).scrollTop()> 0)
 					{
 						window.scrollTo(0,0);
 					} 
 			}
 		})};
+		
+		// Code to check if video has ended
+		var tid = setInterval(checkEnd, 50);
+		
+		function checkEnd(){
+		player.getEnded().then(function(ended) {
+			// `ended` indicates whether the video has ended
+			console.log(ended);
+		})};
+		
+		/*setTimeout(() => {
+			setInterval(() => {
+				console.log("Here is the interval thing");
+			}, 2000)
+		}, 5000);
 	
 		
 		/*function shake(){
