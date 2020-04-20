@@ -87,8 +87,8 @@
 				}
 			}
 			
-			if((seconds>280 && seconds <300)){
-				$("#tammytwo").fadeIn(30000);
+			if((seconds>275 && seconds <285)){
+				$("#tammytwo").fadeIn(3000);
 				let tammyTwo = document.getElementById("tammytwo");
 				let ts = setInterval(tammyCreep, 5);
 				function tammyCreep(){
@@ -101,12 +101,27 @@
 				}
 			}
 			
+			if((seconds>320 && seconds <330)){
+				$("#tammythree").fadeIn(30000);
+				let tammyThree = document.getElementById("tammythree");
+				let ts = setInterval(tammyCreep, 5);
+				function tammyCreep(){
+					if(scale2 > 3){
+						clearInterval(ts);
+					} else {
+						scale2 = scale2 + .000001;
+						tammyThree.style.transform = "scale(" + scale2 + ")";
+					}
+				}
+			}
+			
 			//Back to normal
 			if((seconds>333 && seconds <337)){
 				console.log("Back to normal");
 				$("#blackout").css("display", "none");
 				$("#tammyone").css("display", "none");
 				$("#tammytwo").css("display", "none");
+				$("#tammythree").css("display", "none");
 			}
 			
 			function keepTop(event) {
@@ -122,8 +137,9 @@
 		
 		function checkEnd(){
 		player.getEnded().then(function(ended) {
-			// `ended` indicates whether the video has ended
-			console.log(ended);
+			if(ended == true){
+				
+			}
 		})};
 		
 		/*setTimeout(() => {

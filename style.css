@@ -75,6 +75,17 @@ iframe {
 	display: none;
 }
 
+#tammythree {
+	position: fixed;
+	height: 171px;
+	width: auto;
+	left: 49px;
+	top: 173px;
+	transform: rotate(-26deg);
+	z-index: 1002;
+	display: none;
+}
+
 #closebutton {
 	display: none;
 }
