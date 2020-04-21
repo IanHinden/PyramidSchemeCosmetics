@@ -18,6 +18,7 @@
 		
 		let scale = 1.5;
 		let scale2 = 1.5;
+		let scale3 = 1.5;
 
 		player.on('play', function() {
 			console.log('played the video!');
@@ -73,7 +74,7 @@
 				window.addEventListener("scroll", keepTop, true);
 			}
 			
-			if((seconds>230 && seconds <250)){
+			if((seconds>230 && seconds <240)){
 				$("#tammyone").fadeIn(30000);
 				let tammyOne = document.getElementById("tammyone");
 				let ts = setInterval(tammyCreep, 5);
@@ -87,11 +88,11 @@
 				}
 			}
 			
-			if((seconds>275 && seconds <285)){
-				$("#tammytwo").fadeIn(3000);
+			if((seconds>250 && seconds <260)){
+				$("#tammytwo").fadeIn(30000);
 				let tammyTwo = document.getElementById("tammytwo");
-				let ts = setInterval(tammyCreep, 5);
-				function tammyCreep(){
+				let ts = setInterval(tammyCreep2, 5);
+				function tammyCreep2(){
 					if(scale2 > 3){
 						clearInterval(ts);
 					} else {
@@ -101,16 +102,31 @@
 				}
 			}
 			
-			if((seconds>320 && seconds <330)){
+			if((seconds>280 && seconds <290)){
 				$("#tammythree").fadeIn(30000);
 				let tammyThree = document.getElementById("tammythree");
-				let ts = setInterval(tammyCreep, 5);
-				function tammyCreep(){
-					if(scale2 > 3){
+				let ts = setInterval(tammyCreep3, 5);
+				function tammyCreep3(){
+					if(scale3 > 3){
 						clearInterval(ts);
 					} else {
-						scale2 = scale2 + .000001;
-						tammyThree.style.transform = "scale(" + scale2 + ")";
+						scale3 = scale3 + .000001;
+						tammyThree.style.transform = "scale(" + scale3 + ")";
+					}
+				}
+			}
+			
+			if((seconds>310 && seconds <333)){
+				$("#tammyfour").fadeIn(30000);
+				let tammyFour = document.getElementById("tammyfour");
+				let ts = setInterval(tammyCreep4, 5);
+				let scale4 = 1.5;
+				function tammyCreep4(){
+					if(scale4 > 5){
+						clearInterval(ts);
+					} else {
+						scale4 = scale4 + .0005;
+						tammyFour.style.transform = "scale(" + scale4 + ")";
 					}
 				}
 			}
@@ -119,9 +135,6 @@
 			if((seconds>333 && seconds <337)){
 				console.log("Back to normal");
 				$("#blackout").css("display", "none");
-				$("#tammyone").css("display", "none");
-				$("#tammytwo").css("display", "none");
-				$("#tammythree").css("display", "none");
 			}
 			
 			function keepTop(event) {

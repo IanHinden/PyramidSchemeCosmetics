@@ -86,6 +86,16 @@ iframe {
 	display: none;
 }
 
+#tammyfour {
+	position: fixed;
+	height: 124px;
+	width: auto;
+	right: 27px;
+	top: 351px;
+	z-index: 1003;
+	display: none;
+}
+
 #closebutton {
 	display: none;
 }
