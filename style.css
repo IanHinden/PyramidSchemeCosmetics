@@ -96,6 +96,16 @@ iframe {
 	display: none;
 }
 
+#tammyfive {
+	position: fixed;
+	height: 207px;
+	width: auto;
+	left: 27px;
+	top: 420px;
+	z-index: 1004;
+	display: none;
+}
+
 #closebutton {
 	display: none;
 }

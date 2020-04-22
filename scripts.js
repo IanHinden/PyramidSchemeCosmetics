@@ -19,6 +19,7 @@
 		let scale = 1.5;
 		let scale2 = 1.5;
 		let scale3 = 1.5;
+		let scale5 = 1.5;
 
 		player.on('play', function() {
 			console.log('played the video!');
@@ -60,6 +61,10 @@
 							$("#opptext-hidden").css("display","none");
 						}
 				});
+			}
+			
+			if(seconds >30 && seconds < 35){
+				document.getElementById("donpicture").src = "images/DonGlow.gif";
 			}
 			
 			if((seconds>209.5 && seconds < 220)){
@@ -120,13 +125,27 @@
 				$("#tammyfour").fadeIn(30000);
 				let tammyFour = document.getElementById("tammyfour");
 				let ts = setInterval(tammyCreep4, 5);
-				let scale4 = 1.5;
+				let scale4 = .5;
 				function tammyCreep4(){
 					if(scale4 > 5){
 						clearInterval(ts);
 					} else {
-						scale4 = scale4 + .0005;
+						scale4 = scale4 + .005;
 						tammyFour.style.transform = "scale(" + scale4 + ")";
+					}
+				}
+			}
+			
+			if((seconds>320 && seconds <3200)){
+				$("#tammyfive").fadeIn(30000);
+				let tammyFive = document.getElementById("tammyfive");
+				let ts = setInterval(tammyCreep5, 5);
+				function tammyCreep5(){
+					if(scale5 > 3){
+						clearInterval(ts);
+					} else {
+						scale5 = scale5 + .000001;
+						tammyFive.style.transform = "scale(" + scale5 + ")";
 					}
 				}
 			}
