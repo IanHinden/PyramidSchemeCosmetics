@@ -445,6 +445,21 @@ span {
 	padding-bottom: 338px;
 }
 
+#credits {
+	height: 1243%;
+	width: 100%;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1005;
+	display: none;
+}
+
+#iancredit {
+	width: 250px;
+}
+
 @media screen and (max-width: 995px) {
     
 	#jumpto {

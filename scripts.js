@@ -174,6 +174,15 @@
 			}
 		})};
 		
+		document.getElementById("iancredit").addEventListener("mouseover", function(){
+			document.getElementById("iancredit").src = "images/IanCreditLink.gif";
+		});
+		
+		document.getElementById("iancredit").addEventListener("mouseout", function(){
+			document.getElementById("iancredit").src = "images/IanCredit.gif";
+		});
+		
+		
 		/*setTimeout(() => {
 			setInterval(() => {
 				console.log("Here is the interval thing");
