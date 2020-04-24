@@ -182,6 +182,14 @@
 			document.getElementById("iancredit").src = "images/IanCredit.gif";
 		});
 		
+		document.getElementById("kynancredit").addEventListener("mouseover", function(){
+			document.getElementById("kynancredit").src = "images/KynanCreditLink.gif";
+		});
+		
+		document.getElementById("kynancredit").addEventListener("mouseout", function(){
+			document.getElementById("kynancredit").src = "images/KynanCredit.gif";
+		});
+		
 		
 		/*setTimeout(() => {
 			setInterval(() => {
