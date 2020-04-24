@@ -467,6 +467,12 @@ span {
 	width: 300px;
 }
 
+#victoriacredit {
+	position: fixed;
+	left: 600px;
+	width: 300px;
+}
+
 @media screen and (max-width: 995px) {
     
 	#jumpto {

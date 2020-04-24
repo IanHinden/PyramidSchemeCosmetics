@@ -190,6 +190,14 @@
 			document.getElementById("kynancredit").src = "images/KynanCredit.gif";
 		});
 		
+		document.getElementById("victoriacredit").addEventListener("mouseover", function(){
+			document.getElementById("victoriacredit").src = "images/VictoriaCreditLink.gif";
+		});
+		
+		document.getElementById("victoriacredit").addEventListener("mouseout", function(){
+			document.getElementById("victoriacredit").src = "images/VictoriaCredit.gif";
+		});
+		
 		
 		/*setTimeout(() => {
 			setInterval(() => {
