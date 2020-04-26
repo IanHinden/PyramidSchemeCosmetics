@@ -462,17 +462,22 @@ span {
 
 #iancredit {
 	flex: 1;
-	width: 250px;
+	width: 25%;
 }
 
 #kynancredit {
 	flex: 1;
-	width: 300px;
+	width: 25%;
 }
 
 #victoriacredit {
 	flex: 1;
-	width: 300px;
+	width: 25%;
+}
+
+#seniacredit {
+	flex: 1;
+	width: 25%;
 }
 
 @media screen and (max-width: 995px) {
