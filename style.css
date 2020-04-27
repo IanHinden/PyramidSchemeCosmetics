@@ -480,6 +480,35 @@ span {
 	width: 25%;
 }
 
+#crewcredits {
+	display: flex;
+}
+
+#noahcredit {
+	flex: 1;
+	width: 20%;
+}
+
+#engiecredit {
+	flex: 1;
+	width: 20%;
+}
+
+#dianacredit {
+	flex: 1;
+	width: 20%;
+}
+
+#brittanycredit {
+	flex: 1;
+	width: 20%;
+}
+
+#cynthiacredit {
+	flex: 1;
+	width: 20%;
+}
+
 @media screen and (max-width: 995px) {
     
 	#jumpto {
