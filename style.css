@@ -480,6 +480,30 @@ span {
 	width: 25%;
 }
 
+#cast {
+	display: flex;
+}
+
+#joancredit {
+	flex: 1;
+	width: 25%;
+}
+
+#deecredit {
+	flex: 1;
+	width: 25%;
+}
+
+#brandoncredit {
+	flex: 1;
+	width: 25%;
+}
+
+#cameroncredit {
+	flex: 1;
+	width: 25%;
+}
+
 #crewcredits {
 	display: flex;
 }
@@ -505,6 +529,35 @@ span {
 }
 
 #cynthiacredit {
+	flex: 1;
+	width: 20%;
+}
+
+#crewcreditstwo {
+	display: flex;
+}
+
+#taniscredit {
+	flex: 1;
+	width: 20%;
+}
+
+#jencredit {
+	flex: 1;
+	width: 20%;
+}
+
+#rebekahcredit {
+	flex: 1;
+	width: 20%;
+}
+
+#alexacredit {
+	flex: 1;
+	width: 20%;
+}
+
+#erikcredit {
 	flex: 1;
 	width: 20%;
 }
