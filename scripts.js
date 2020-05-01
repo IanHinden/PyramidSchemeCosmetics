@@ -67,16 +67,19 @@
 				document.getElementById("donpicture").src = "images/DonGlow.gif";
 			}
 			
+			if((seconds>209.5 && seconds < 336)){
+				window.scrollTo(0,0);
+			}
+			
 			if((seconds>209.5 && seconds < 220)){
 				$("#blackout").css("display", "block");
-				window.scrollTo(0,0);
 			}
 			
 			if((seconds>211 && seconds < 220)){
 				$("iframe").css("height","436px");
 				$("iframe").removeClass("iframe-scrolled");
 				$("iframe").addClass("iframe-shock");
-				window.addEventListener("scroll", keepTop, true);
+				//window.addEventListener("scroll", keepTop, true);
 			}
 			
 			if((seconds>230 && seconds <240)){
@@ -136,7 +139,7 @@
 				}
 			}
 			
-			if((seconds>320 && seconds <3200)){
+			if((seconds>320 && seconds <320)){
 				$("#tammyfive").fadeIn(30000);
 				let tammyFive = document.getElementById("tammyfive");
 				let ts = setInterval(tammyCreep5, 5);
@@ -174,6 +177,7 @@
 			}
 		})};
 		
+		//Top credits interaction
 		document.getElementById("iancredit").addEventListener("mouseover", function(){
 			document.getElementById("iancredit").src = "images/IanCreditLink.gif";
 		});
@@ -188,6 +192,14 @@
 		
 		document.getElementById("kynancredit").addEventListener("mouseout", function(){
 			document.getElementById("kynancredit").src = "images/KynanCredit.gif";
+		});
+		
+		document.getElementById("victoriacredit").addEventListener("mouseover", function(){
+			document.getElementById("victoriacredit").src = "images/VictoriaCreditLink.gif";
+		});
+		
+		document.getElementById("victoriacredit").addEventListener("mouseout", function(){
+			document.getElementById("victoriacredit").src = "images/VictoriaCredit.gif";
 		});
 		
 		document.getElementById("victoriacredit").addEventListener("mouseover", function(){

@@ -484,24 +484,29 @@ span {
 	display: flex;
 }
 
+#johncredit {
+	flex: 1;
+	width: 20%;
+}
+
 #joancredit {
 	flex: 1;
-	width: 25%;
+	width: 20%;
 }
 
 #deecredit {
 	flex: 1;
-	width: 25%;
+	width: 20%;
 }
 
 #brandoncredit {
 	flex: 1;
-	width: 25%;
+	width: 20%;
 }
 
 #cameroncredit {
 	flex: 1;
-	width: 25%;
+	width: 20%;
 }
 
 #crewcredits {
