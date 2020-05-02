@@ -15,6 +15,11 @@ body {
 	margin: 0 auto;
 }
 
+#headerlinks {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
 #vidcontainer {
 	height: 290px;
 	position: relative;
