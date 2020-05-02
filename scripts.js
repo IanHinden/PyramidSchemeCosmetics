@@ -173,7 +173,8 @@
 		function checkEnd(){
 		player.getEnded().then(function(ended) {
 			if(ended == true){
-				
+				document.getElementById("credits").style.display = "block";
+				document.getElementById("player").style.display = "none";
 			}
 		})};
 		
