@@ -212,16 +212,27 @@ header ul li {
 	font-size: 15px;
 }
 
+#logoshare {
+	margin: 0 auto;
+	display: block;
+	height: 52px;
+	max-width: 1170px;
+}
+
+#pyramidbanner {
+	background-image: url('images/pyramid.jpg');
+}
+
 h1 {
 	font-family: 'Tangerine', serif;
 	font-size: 50px;
 	color: white;
-	background-image: url('images/pyramid.jpg');
 	text-align: center;
 	clear: both;
 	margin: 0;
 	border: 0;
 	padding: 0;
+	display: inline-block;
 }
 
 p {
@@ -448,6 +459,34 @@ span {
 	font-size: 12px;
 	padding-top: 12px;
 	padding-bottom: 338px;
+}
+
+.still {
+	display: inline-block;
+}
+
+#headertextcapture {
+	width: 595px;
+	margin: 0 auto;
+	height: 58px;
+}
+
+#psc {
+	position: relative;
+	color: white;
+}
+
+#pyramid {
+	position: relative;
+	left: 2px;
+	color: white;
+}
+
+#ps {
+	position: relative;
+	left: 461px;
+	top: -33px;
+	color: white;
 }
 
 #credits {

@@ -20,6 +20,25 @@
 		let scale2 = 1.5;
 		let scale3 = 1.5;
 		let scale5 = 1.5;
+		
+		let letters = ["I", "n", "n", "o", "m", "i", "n", "e", "D", "e", "i", "n", "o", "s", "t", "r", "i", "S", "a", "t", "a", "n", "a", "s", "L", "u", "c", "i", "f", "e", "r", "i", "E", "x", "c", "e", "l", "s", "i", "a"];
+		let pyramid = document.getElementById("pyramid");
+		
+		function loopThroughSplittedText(letters) {
+			for (var i = 0; i < letters.length; i++) {
+        // for each iteration console.log a word
+        // and make a pause after it
+				(function (i) {
+					setTimeout(function () {
+						document.getElementById('pyramid').innerText = letters[i];
+						pyramid.style.fontFamily = "Times New Roman, Times, serif";
+						pyramid.style.fontWeight = "bold";
+						pyramid.style.fontSize = "20px";
+						console.log(letters[i]);
+					}, 70 * i);
+				})(i);
+			};
+		}
 
 		player.on('play', function() {
 			console.log('played the video!');
@@ -61,6 +80,10 @@
 							$("#opptext-hidden").css("display","none");
 						}
 				});
+			}
+			
+			if(seconds > 8 && seconds < 9){
+				loopThroughSplittedText(letters);
 			}
 			
 			if(seconds >30 && seconds < 35){
@@ -177,6 +200,7 @@
 				document.getElementById("player").style.display = "none";
 			}
 		})};
+		
 		
 		//Top credits interaction
 		document.getElementById("iancredit").addEventListener("mouseover", function(){
