@@ -129,6 +129,10 @@ iframe {
 	width: auto;
 }
 
+#opportunity {
+	background-image: url('images/pyramid.jpg');
+}
+
 #opptext {
 	padding: 10px;
 	line-height: 40px;
@@ -233,6 +237,11 @@ h1 {
 	border: 0;
 	padding: 0;
 	display: inline-block;
+}
+
+.headers {
+	background-image: url('images/pyramid.jpg');
+	width: 100%;
 }
 
 p {
