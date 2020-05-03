@@ -13,6 +13,8 @@
 			}
 		});
 		
+		let endedFunction = false;
+		
 		var iframe = document.querySelector('iframe');
 		var player = new Vimeo.Player(iframe);
 		
@@ -34,7 +36,6 @@
 						pyramid.style.fontFamily = "Times New Roman, Times, serif";
 						pyramid.style.fontWeight = "bold";
 						pyramid.style.fontSize = "20px";
-						console.log(letters[i]);
 					}, 70 * i);
 				})(i);
 			};
@@ -195,9 +196,11 @@
 		
 		function checkEnd(){
 		player.getEnded().then(function(ended) {
-			if(ended == true){
+			if(ended == true && endedFunction == false){
+				endedFunction = true;
 				document.getElementById("credits").style.display = "block";
 				document.getElementById("player").style.display = "none";
+				console.log(endedFunction);
 			}
 		})};
 		

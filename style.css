@@ -562,6 +562,40 @@ span {
 	width: 20%;
 }
 
+#casttwo {
+	display: flex;
+}
+
+#sylviacredit {
+	flex: 1;
+	width: 16%;
+}
+
+#genevievecredit {
+	flex: 1;
+	width: 16%;
+}
+
+#cameron2credit {
+	flex: 1;
+	width: 16%;
+}
+
+#zacharycredit {
+	flex: 1;
+	width: 16%;
+}
+
+#tanistwocredit {
+	flex: 1;
+	width: 16%;
+}
+
+#iancredit {
+	flex: 1;
+	width: 16%;
+}
+
 #crewcredits {
 	display: flex;
 }
