@@ -26,6 +26,8 @@
 		let letters = ["I", "n", "n", "o", "m", "i", "n", "e", "D", "e", "i", "n", "o", "s", "t", "r", "i", "S", "a", "t", "a", "n", "a", "s", "L", "u", "c", "i", "f", "e", "r", "i", "E", "x", "c", "e", "l", "s", "i", "a"];
 		let pyramid = document.getElementById("pyramid");
 		
+		var yvonneFlip = false;
+		
 		function loopThroughSplittedText(letters) {
 			for (var i = 0; i < letters.length; i++) {
         // for each iteration console.log a word
@@ -89,6 +91,20 @@
 			
 			if(seconds >30 && seconds < 35){
 				document.getElementById("donpicture").src = "images/DonGlow.gif";
+			}
+			
+			if(seconds > 159 && seconds < 160) {
+				if (yvonneFlip == false){
+					yvonneFlip = true;
+					$("#yvonne").attr("src", "images/Snow.gif");
+				}
+			}
+			
+			if(seconds > 188 && seconds < 189) {
+				if (yvonneFlip == true){
+					yvonneFlip = false;
+					$("#yvonne").attr("src", "images/Yvonne.jpg");
+				}
 			}
 			
 			if((seconds>209.5 && seconds < 336)){

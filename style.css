@@ -325,6 +325,11 @@ span {
 	text-align: center;
 }
 
+#yvonne {
+	width: 267px;
+	height: 177px;
+}
+
 .flexproducts {
 	display: flex;
 	flex-flow: row wrap;
