@@ -93,7 +93,7 @@
 				document.getElementById("donpicture").src = "images/DonGlow.gif";
 			}
 			
-			if(seconds > 159 && seconds < 160) {
+			if(seconds > 159 && seconds < 187) {
 				if (yvonneFlip == false){
 					yvonneFlip = true;
 					$("#yvonne").attr("src", "images/Snow.gif");
@@ -219,6 +219,18 @@
 				console.log(endedFunction);
 			}
 		})};
+		
+		// Code to check if the film has paused
+		let paused = setInterval(checkPause, 20);
+		
+		function checkPause() {
+			player.getPaused().then(function(paused) {
+				if(paused == true) {
+					yvonneFlip = false;
+					$("#yvonne").attr("src", "images/Yvonne.jpg");
+				}
+			});
+		}
 		
 		
 		//Top credits interaction
