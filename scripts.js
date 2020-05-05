@@ -73,7 +73,15 @@
 				});
 			}*/
 			
-			if(seconds>20){
+			if(seconds > 8 && seconds < 9){
+				loopThroughSplittedText(letters);
+			}
+			
+			if(seconds >30 && seconds < 35){
+				document.getElementById("donpicture").src = "images/DonGlow.gif";
+			}
+			
+			if(seconds>144){
 					player.getPaused().then(function(paused){
 						if(paused==false){
 							$("#opptext").css("display","none");
@@ -83,14 +91,6 @@
 							$("#opptext-hidden").css("display","none");
 						}
 				});
-			}
-			
-			if(seconds > 8 && seconds < 9){
-				loopThroughSplittedText(letters);
-			}
-			
-			if(seconds >30 && seconds < 35){
-				document.getElementById("donpicture").src = "images/DonGlow.gif";
 			}
 			
 			if(seconds > 159 && seconds < 187) {
