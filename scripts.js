@@ -96,7 +96,7 @@
 			if(seconds > 159 && seconds < 187) {
 				if (yvonneFlip == false){
 					yvonneFlip = true;
-					$("#yvonne").attr("src", "images/Snow.gif");
+					$("#yvonne").attr("src", "images/SnowResize.gif");
 				}
 			}
 			
