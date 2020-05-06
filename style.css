@@ -662,6 +662,44 @@ span {
 	width: 20%;
 }
 
+#crewcreditsthree {
+	display: flex;
+}
+
+#ixtelcredit {
+	flex: 1;
+	width: 20%;
+}
+
+#mattcredit {
+	flex: 1;
+	width: 20%;
+}
+
+#larissacredit {
+	flex: 1;
+	width: 20%;
+}
+
+#samcredit {
+	flex: 1;
+	width: 20%;
+}
+
+#dogponycredit {
+	flex: 1;
+	width: 20%;
+}
+
+#specialthanks {
+	display: flex;
+}
+
+#jasoncredit {
+	width: 20%;
+	margin: 0 auto;
+}
+
 @media screen and (max-width: 995px) {
     
 	#jumpto {
