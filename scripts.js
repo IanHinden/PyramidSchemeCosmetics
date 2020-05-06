@@ -81,7 +81,7 @@
 				document.getElementById("donpicture").src = "images/DonGlow.gif";
 			}
 			
-			if(seconds>144){
+			if(seconds>144 && seconds < 147){
 					player.getPaused().then(function(paused){
 						if(paused==false){
 							$("#opptext").css("display","none");
@@ -91,6 +91,11 @@
 							$("#opptext-hidden").css("display","none");
 						}
 				});
+			}
+			
+			if(seconds>147 && seconds <152){
+				$("#opptext").css("display","block");
+				$("#opptext-hidden").css("display","none");
 			}
 			
 			if(seconds > 159 && seconds < 187) {

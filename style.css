@@ -542,27 +542,32 @@ span {
 
 #johncredit {
 	flex: 1;
-	width: 20%;
+	width: 17%;
 }
 
 #joancredit {
 	flex: 1;
-	width: 20%;
+	width: 17%;
 }
 
 #deecredit {
 	flex: 1;
-	width: 20%;
+	width: 17%;
 }
 
 #brandoncredit {
 	flex: 1;
-	width: 20%;
+	width: 17%;
+}
+
+#savanahcredit {
+	flex: 1;
+	width: 17%;
 }
 
 #cameroncredit {
 	flex: 1;
-	width: 20%;
+	width: 17%;
 }
 
 #casttwo {
