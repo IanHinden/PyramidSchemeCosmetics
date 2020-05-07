@@ -230,7 +230,7 @@
 		
 		function checkPause() {
 			player.getPaused().then(function(paused) {
-				if(paused == true) {
+				if(paused == true && yvonneFlip == true) {
 					yvonneFlip = false;
 					$("#yvonne").attr("src", "images/Yvonne.jpg");
 				}
@@ -239,38 +239,285 @@
 		
 		
 		//Top credits interaction
+		//Ian Credits
 		document.getElementById("iancredit").addEventListener("mouseover", function(){
 			document.getElementById("iancredit").src = "images/IanCreditLink.gif";
 		});
+		
 		
 		document.getElementById("iancredit").addEventListener("mouseout", function(){
 			document.getElementById("iancredit").src = "images/IanCredit.gif";
 		});
 		
-		document.getElementById("kynancredit").addEventListener("mouseover", function(){
+		document.getElementById("iancredit").addEventListener("click", function(){
+			document.location.href = 'http://www.ianhinden.com';
+		});
+		
+		//Kynan Credits
+		/*document.getElementById("kynancredit").addEventListener("mouseover", function(){
 			document.getElementById("kynancredit").src = "images/KynanCreditLink.gif";
 		});
 		
 		document.getElementById("kynancredit").addEventListener("mouseout", function(){
 			document.getElementById("kynancredit").src = "images/KynanCredit.gif";
-		});
+		});*/
 		
-		document.getElementById("victoriacredit").addEventListener("mouseover", function(){
+		//Victoria Credits
+		/*document.getElementById("victoriacredit").addEventListener("mouseover", function(){
 			document.getElementById("victoriacredit").src = "images/VictoriaCreditLink.gif";
 		});
 		
 		document.getElementById("victoriacredit").addEventListener("mouseout", function(){
 			document.getElementById("victoriacredit").src = "images/VictoriaCredit.gif";
+		});*/
+		
+		//Senia credit
+		document.getElementById("seniacredit").addEventListener("mouseover", function(){
+			document.getElementById("seniacredit").src = "images/SeniaCreditLink.gif";
 		});
 		
-		document.getElementById("victoriacredit").addEventListener("mouseover", function(){
-			document.getElementById("victoriacredit").src = "images/VictoriaCreditLink.gif";
+		document.getElementById("seniacredit").addEventListener("mouseout", function(){
+			document.getElementById("seniacredit").src = "images/SeniaCredit.gif";
 		});
 		
-		document.getElementById("victoriacredit").addEventListener("mouseout", function(){
-			document.getElementById("victoriacredit").src = "images/VictoriaCredit.gif";
+		document.getElementById("seniacredit").addEventListener("click", function(){
+			document.location.href = 'https://www.imdb.com/name/nm9944198/';
 		});
 		
+		//John credit
+		document.getElementById("johncredit").addEventListener("mouseover", function(){
+			document.getElementById("johncredit").src = "images/JohnCreditLink.gif";
+		});
+		
+		document.getElementById("johncredit").addEventListener("mouseout", function(){
+			document.getElementById("johncredit").src = "images/JohnCredit.gif";
+		});
+		
+		document.getElementById("johncredit").addEventListener("click", function(){
+			document.location.href = 'https://www.dogandponystudios.net/';
+		});
+		
+		//Joan credit
+		document.getElementById("joancredit").addEventListener("mouseover", function(){
+			document.getElementById("joancredit").src = "images/JoanCreditLink.gif";
+		});
+		
+		document.getElementById("joancredit").addEventListener("mouseout", function(){
+			document.getElementById("joancredit").src = "images/JoanCredit.gif";
+		});
+		
+		document.getElementById("joancredit").addEventListener("click", function(){
+			document.location.href = 'https://joanbatayola.myportfolio.com/videos';
+		});
+		
+		//Dee credit
+		document.getElementById("deecredit").addEventListener("mouseover", function(){
+			document.getElementById("deecredit").src = "images/DeeCreditLink.gif";
+		});
+		
+		document.getElementById("deecredit").addEventListener("mouseout", function(){
+			document.getElementById("deecredit").src = "images/DeeCredit.gif";
+		});
+		
+		document.getElementById("deecredit").addEventListener("click", function(){
+			document.location.href = 'https://www.imdb.com/name/nm3688939/';
+		});
+		
+		//Brandon credit
+		document.getElementById("brandoncredit").addEventListener("mouseover", function(){
+			document.getElementById("brandoncredit").src = "images/BrandonCreditLink.gif";
+		});
+		
+		document.getElementById("brandoncredit").addEventListener("mouseout", function(){
+			document.getElementById("brandoncredit").src = "images/BrandonCredit.gif";
+		});
+		
+		document.getElementById("brandoncredit").addEventListener("click", function(){
+			document.location.href = 'https://www.unlv.edu/people/brandon-mowles';
+		});
+		
+		//Savanah credit
+		document.getElementById("savanahcredit").addEventListener("mouseover", function(){
+			document.getElementById("savanahcredit").src = "images/SavanahCreditLink.gif";
+		});
+		
+		document.getElementById("savanahcredit").addEventListener("mouseout", function(){
+			document.getElementById("savanahcredit").src = "images/SavanahCredit.gif";
+		});
+		
+		document.getElementById("savanahcredit").addEventListener("click", function(){
+			document.location.href = 'https://vimeo.com/user45679814';
+		});
+		
+		//Cameron credit
+		document.getElementById("cameroncredit").addEventListener("mouseover", function(){
+			document.getElementById("cameroncredit").src = "images/CameronCreditLink.gif";
+		});
+		
+		document.getElementById("cameroncredit").addEventListener("mouseout", function(){
+			document.getElementById("cameroncredit").src = "images/CameronCredit.gif";
+		});
+		
+		document.getElementById("cameroncredit").addEventListener("click", function(){
+			document.location.href = 'https://vimeo.com/user3465825';
+		});
+		
+		//Syliva credit
+		/*document.getElementById("sylviacredit").addEventListener("mouseover", function(){
+			document.getElementById("sylviacredit").src = "images/SylviaCreditLink.gif";
+		});
+		
+		document.getElementById("sylviacredit").addEventListener("mouseout", function(){
+			document.getElementById("sylviacredit").src = "images/SylviaCredit.gif";
+		});
+		
+		document.getElementById("sylviacredit").addEventListener("click", function(){
+			document.location.href = 'https://vimeo.com/user3465825';
+		});*/
+		
+		//Genevieve credit
+		document.getElementById("genevievecredit").addEventListener("mouseover", function(){
+			document.getElementById("genevievecredit").src = "images/GenevieveCreditLink.gif";
+		});
+		
+		document.getElementById("genevievecredit").addEventListener("mouseout", function(){
+			document.getElementById("genevievecredit").src = "images/GenevieveCredit.gif";
+		});
+		
+		document.getElementById("genevievecredit").addEventListener("click", function(){
+			document.location.href = 'https://vimeo.com/user27592904';
+		});
+		
+		//Cameron2 credit
+		document.getElementById("cameron2credit").addEventListener("mouseover", function(){
+			document.getElementById("cameron2credit").src = "images/Cameron2CreditLink.gif";
+		});
+		
+		document.getElementById("cameron2credit").addEventListener("mouseout", function(){
+			document.getElementById("cameron2credit").src = "images/Cameron2Credit.gif";
+		});
+		
+		document.getElementById("cameron2credit").addEventListener("click", function(){
+			document.location.href = 'https://vimeo.com/user3465825';
+		});
+		
+		//Zachary credit
+		document.getElementById("zacharycredit").addEventListener("mouseover", function(){
+			document.getElementById("zacharycredit").src = "images/ZacharyCreditLink.gif";
+		});
+		
+		document.getElementById("zacharycredit").addEventListener("mouseout", function(){
+			document.getElementById("zacharycredit").src = "images/ZacharyCredit.gif";
+		});
+		
+		document.getElementById("zacharycredit").addEventListener("click", function(){
+			document.location.href = 'https://www.youtube.com/channel/UC7-BApb3ujN1hz_HxHvILyQ';
+		});
+		
+		//Tanis 2 credit
+		document.getElementById("tanis2credit").addEventListener("mouseover", function(){
+			document.getElementById("tanis2credit").src = "images/Tanis2CreditLink.gif";
+		});
+		
+		document.getElementById("tanis2credit").addEventListener("mouseout", function(){
+			document.getElementById("tanis2credit").src = "images/Tanis2Credit.gif";
+		});
+		
+		document.getElementById("tanis2credit").addEventListener("click", function(){
+			document.location.href = 'https://www.twitch.tv/tanis1110';
+		});
+		
+		//Daniel credit
+		/*
+		document.getElementById("taniscredit").addEventListener("mouseover", function(){
+			document.getElementById("taniscredit").src = "images/TanisCreditLink.gif";
+		});
+		
+		document.getElementById("taniscredit").addEventListener("mouseout", function(){
+			document.getElementById("taniscredit").src = "images/TanisCredit.gif";
+		});
+		
+		document.getElementById("taniscredit").addEventListener("click", function(){
+			document.location.href = 'https://www.twitch.tv/tanis1110';
+		});*/
+		
+		//Ian 2 credit
+		document.getElementById("ian2credit").addEventListener("mouseover", function(){
+			document.getElementById("ian2credit").src = "images/Ian2CreditLink.gif";
+		});
+		
+		document.getElementById("ian2credit").addEventListener("mouseout", function(){
+			document.getElementById("ian2credit").src = "images/Ian2Credit.gif";
+		});
+		
+		document.getElementById("ian2credit").addEventListener("click", function(){
+			document.location.href = 'https://www.ianhinden.com';
+		});
+		
+		//Noah credit
+		document.getElementById("noahcredit").addEventListener("mouseover", function(){
+			document.getElementById("noahcredit").src = "images/NoahCreditLink.gif";
+		});
+		
+		document.getElementById("noahcredit").addEventListener("mouseout", function(){
+			document.getElementById("noahcredit").src = "images/NoahCredit.gif";
+		});
+		
+		document.getElementById("noahcredit").addEventListener("click", function(){
+			document.location.href = 'https://vimeo.com/user26305738';
+		});
+		
+		//Engie credit
+		/*document.getElementById("engiecredit").addEventListener("mouseover", function(){
+			document.getElementById("engiecredit").src = "images/EngieCreditLink.gif";
+		});
+		
+		document.getElementById("engiecredit").addEventListener("mouseout", function(){
+			document.getElementById("engiecredit").src = "images/EngieCredit.gif";
+		});
+		
+		document.getElementById("engiecredit").addEventListener("click", function(){
+			document.location.href = 'https://vimeo.com/user26305738';
+		});*/
+		
+		//Diana credit
+		document.getElementById("dianacredit").addEventListener("mouseover", function(){
+			document.getElementById("dianacredit").src = "images/DianaCreditLink.gif";
+		});
+		
+		document.getElementById("dianacredit").addEventListener("mouseout", function(){
+			document.getElementById("dianacredit").src = "images/DianaCredit.gif";
+		});
+		
+		document.getElementById("dianacredit").addEventListener("click", function(){
+			document.location.href = 'https://vimeo.com/user33763482';
+		});
+		
+		//Brittany credit
+		document.getElementById("brittanycredit").addEventListener("mouseover", function(){
+			document.getElementById("brittanycredit").src = "images/BrittanyCreditLink.gif";
+		});
+		
+		document.getElementById("brittanycredit").addEventListener("mouseout", function(){
+			document.getElementById("brittanycredit").src = "images/BrittanyCredit.gif";
+		});
+		
+		document.getElementById("brittanycredit").addEventListener("click", function(){
+			document.location.href = 'https://vimeo.com/user33763482';
+		});
+		
+		//Tanis credit
+		document.getElementById("taniscredit").addEventListener("mouseover", function(){
+			document.getElementById("taniscredit").src = "images/TanisCreditLink.gif";
+		});
+		
+		document.getElementById("taniscredit").addEventListener("mouseout", function(){
+			document.getElementById("taniscredit").src = "images/TanisCredit.gif";
+		});
+		
+		document.getElementById("taniscredit").addEventListener("click", function(){
+			document.location.href = 'https://www.twitch.tv/tanis1110';
+		});
 		
 		/*setTimeout(() => {
 			setInterval(() => {
