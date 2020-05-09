@@ -506,6 +506,19 @@
 			document.location.href = 'https://vimeo.com/user33763482';
 		});
 		
+		//Cnthia credit
+		/*document.getElementById("cynthiacredit").addEventListener("mouseover", function(){
+			document.getElementById("cynthiacredit").src = "images/CynthiaCreditLink.gif";
+		});
+		
+		document.getElementById("cynthiacredit").addEventListener("mouseout", function(){
+			document.getElementById("cynthiacredit").src = "images/CynthiaCredit.gif";
+		});
+		
+		document.getElementById("cynthiacredit").addEventListener("click", function(){
+			document.location.href = 'https://vimeo.com/user33763482';
+		});*/
+		
 		//Tanis credit
 		document.getElementById("taniscredit").addEventListener("mouseover", function(){
 			document.getElementById("taniscredit").src = "images/TanisCreditLink.gif";
@@ -517,6 +530,137 @@
 		
 		document.getElementById("taniscredit").addEventListener("click", function(){
 			document.location.href = 'https://www.twitch.tv/tanis1110';
+		});
+		
+		//Jen credit
+		/*document.getElementById("jencredit").addEventListener("mouseover", function(){
+			document.getElementById("jencredit").src = "images/JenCreditLink.gif";
+		});
+		
+		document.getElementById("jencredit").addEventListener("mouseout", function(){
+			document.getElementById("jencredit").src = "images/JenCredit.gif";
+		});
+		
+		document.getElementById("jencredit").addEventListener("click", function(){
+			document.location.href = 'https://vimeo.com/user33763482';
+		});*/
+		
+		//Rebekah credit
+		/*document.getElementById("rebekahcredit").addEventListener("mouseover", function(){
+			document.getElementById("rebekahcredit").src = "images/RebekahCreditLink.gif";
+		});
+		
+		document.getElementById("rebekahcredit").addEventListener("mouseout", function(){
+			document.getElementById("rebekahcredit").src = "images/RebekahCredit.gif";
+		});
+		
+		document.getElementById("rebekahcredit").addEventListener("click", function(){
+			document.location.href = 'https://vimeo.com/user33763482';
+		});*/
+		
+		//Alexa credit
+		/*document.getElementById("alexacredit").addEventListener("mouseover", function(){
+			document.getElementById("alexacredit").src = "images/AlexaCreditLink.gif";
+		});
+		
+		document.getElementById("alexacredit").addEventListener("mouseout", function(){
+			document.getElementById("alexacredit").src = "images/AlexaCredit.gif";
+		});
+		
+		document.getElementById("alexacredit").addEventListener("click", function(){
+			document.location.href = 'https://vimeo.com/user33763482';
+		});*/
+		
+		//Erik credit
+		document.getElementById("erikcredit").addEventListener("mouseover", function(){
+			document.getElementById("erikcredit").src = "images/ErikCreditLink.gif";
+		});
+		
+		document.getElementById("erikcredit").addEventListener("mouseout", function(){
+			document.getElementById("erikcredit").src = "images/ErikCredit.gif";
+		});
+		
+		document.getElementById("erikcredit").addEventListener("click", function(){
+			document.location.href = 'https://vimeo.com/user62639765';
+		});
+		
+		//Ixtel credit
+		document.getElementById("ixtelcredit").addEventListener("mouseover", function(){
+			document.getElementById("ixtelcredit").src = "images/IxtelCreditLink.gif";
+		});
+		
+		document.getElementById("ixtelcredit").addEventListener("mouseout", function(){
+			document.getElementById("ixtelcredit").src = "images/IxtelCredit.gif";
+		});
+		
+		document.getElementById("ixtelcredit").addEventListener("click", function(){
+			document.location.href = 'https://www.imdb.com/name/nm9777017/';
+		});
+		
+		//Matt credit
+		document.getElementById("mattcredit").addEventListener("mouseover", function(){
+			document.getElementById("mattcredit").src = "images/MattCreditLink.gif";
+		});
+		
+		document.getElementById("mattcredit").addEventListener("mouseout", function(){
+			document.getElementById("mattcredit").src = "images/MattCredit.gif";
+		});
+		
+		document.getElementById("mattcredit").addEventListener("click", function(){
+			document.location.href = 'https://www.linkedin.com/in/matthew-porcaro-b5a0843a/';
+		});
+		
+				
+		//Larissa credit
+		document.getElementById("larissacredit").addEventListener("mouseover", function(){
+			document.getElementById("larissacredit").src = "images/LarissaCreditLink.gif";
+		});
+		
+		document.getElementById("larissacredit").addEventListener("mouseout", function(){
+			document.getElementById("larissacredit").src = "images/LarissaCredit.gif";
+		});
+		
+		document.getElementById("larissacredit").addEventListener("click", function(){
+			document.location.href = 'https://staffmeup.com/profile/id/1319910';
+		});
+		
+		//Sam credit
+		document.getElementById("samcredit").addEventListener("mouseover", function(){
+			document.getElementById("samcredit").src = "images/SamCreditLink.gif";
+		});
+		
+		document.getElementById("samcredit").addEventListener("mouseout", function(){
+			document.getElementById("samcredit").src = "images/SamCredit.gif";
+		});
+		
+		document.getElementById("samcredit").addEventListener("click", function(){
+			document.location.href = 'https://www.linkedin.com/in/samzapiain/';
+		});
+		
+		//Dog and Pony credit
+		document.getElementById("dogponycredit").addEventListener("mouseover", function(){
+			document.getElementById("dogponycredit").src = "images/DogPonyCreditLink.gif";
+		});
+		
+		document.getElementById("dogponycredit").addEventListener("mouseout", function(){
+			document.getElementById("dogponycredit").src = "images/DogPonyCredit.gif";
+		});
+		
+		document.getElementById("dogponycredit").addEventListener("click", function(){
+			document.location.href = 'https://www.dogandponystudios.net/';
+		});
+		
+		//Jason credit
+		document.getElementById("jasoncredit").addEventListener("mouseover", function(){
+			document.getElementById("jasoncredit").src = "images/JasonCreditLink.gif";
+		});
+		
+		document.getElementById("jasoncredit").addEventListener("mouseout", function(){
+			document.getElementById("jasoncredit").src = "images/JasonCredit.gif";
+		});
+		
+		document.getElementById("jasoncredit").addEventListener("click", function(){
+			document.location.href = '\https://www.unlv.edu/people/jason-edmiston';
 		});
 		
 		/*setTimeout(() => {
